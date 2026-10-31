@@ -4,18 +4,18 @@
    "vehicle": "Dacia Spring Electric 65",
    "in_test": true,
    "range_true": 160.0,
-   "range_pred": 149.41290283203125,
-   "eta_pred": 5.97651611328125,
+   "range_pred": 154.5299072265625,
+   "eta_pred": 6.1811962890625,
    "trip_km": 150,
    "soc0": 0.8,
-   "E_trip": 25.098234014071185,
+   "E_trip": 24.26714716460662,
    "E_avail": 20.0,
-   "E_charge": 7.598234014071185,
+   "E_charge": 6.7671471646066195,
    "feasible_single_charge": false,
    "t_L2_h": 0.6944444444444443,
    "t_DC_h": 0.17241379310344823,
    "E_departure": 4.999999999999999,
-   "E_enroute": 2.5982340140711857,
+   "E_enroute": 1.7671471646066204,
    "E_charge_catalogue": 5.9375,
    "fast_dc_kw": 29.0,
    "band": "Low",
@@ -24,17 +24,17 @@
    "width": 1622.0,
    "length": 3700.0,
    "towing": 0.0,
-   "p_workplace_session_covers": 0.0759941089837997
+   "p_workplace_session_covers": 0.29661266568483063
   },
   "B": {
    "vehicle": "BMW i5 M60 xDrive Sedan (MY25)",
    "in_test": false,
    "range_true": 430.0,
-   "range_pred": 435.68927001953125,
-   "eta_pred": 5.3656314041814195,
+   "range_pred": 444.535400390625,
+   "eta_pred": 5.474573896436269,
    "trip_km": 300,
    "soc0": 0.8,
-   "E_trip": 55.91140676681797,
+   "E_trip": 54.7987853804089,
    "E_avail": 64.96000000000001,
    "E_charge": 0.0,
    "feasible_single_charge": true,
@@ -54,13 +54,13 @@
   },
   "C": {
    "vehicle": "Fiat 500e 3+1 24 kWh",
-   "in_test": false,
+   "in_test": true,
    "range_true": 135.0,
-   "range_pred": 151.20928955078125,
-   "eta_pred": 7.099027678440434,
+   "range_pred": 148.16854858398438,
+   "eta_pred": 6.956269886572036,
    "trip_km": 100,
    "soc0": 0.8,
-   "E_trip": 14.086436133176019,
+   "E_trip": 14.375520448542972,
    "E_avail": 17.040000000000003,
    "E_charge": 0.0,
    "feasible_single_charge": true,
@@ -80,56 +80,56 @@
   }
  },
  "shap_fig6": {
-  "actual": 280.0,
-  "pred": 292.64190673828125,
-  "base": 391.07012939453125,
+  "actual": 225.0,
+  "pred": 238.32310485839844,
+  "base": 394.3243408203125,
   "top": [
    [
     "battery_capacity_kWh",
-    -87.28815460205078,
-    50.8
-   ],
-   [
-    "fast_charging_power_kw_dc",
-    -15.93595027923584,
-    79.0
+    -167.125732421875,
+    37.8
    ],
    [
     "height_mm",
-    6.298257827758789,
-    1557.0
+    14.974241256713867,
+    1518.0
    ],
    [
-    "width_mm",
-    5.964131832122803,
-    1779.0
+    "fast_charging_power_kw_dc",
+    -8.62302303314209,
+    67.0
+   ],
+   [
+    "top_speed_kmh",
+    3.953706979751587,
+    155.0
    ]
   ]
  },
  "shap_fig7": {
-  "actual": 330.0,
-  "pred": 349.9008483886719,
-  "base": 391.07012939453125,
+  "actual": 340.0,
+  "pred": 350.2049865722656,
+  "base": 394.3243408203125,
   "top": [
    [
-    "height_mm",
-    -73.687255859375,
-    1925.0
+    "battery_capacity_kWh",
+    -70.7626953125,
+    64.0
    ],
    [
-    "battery_capacity_kWh",
-    31.55213165283203,
-    79.0
+    "height_mm",
+    13.996156692504883,
+    1545.0
+   ],
+   [
+    "top_speed_kmh",
+    8.807104110717773,
+    160.0
    ],
    [
     "fast_charging_power_kw_dc",
-    11.058453559875488,
-    135.0
-   ],
-   [
-    "drivetrain_int",
-    -7.316170692443848,
-    0.0
+    -8.63696002960205,
+    35.0
    ]
   ]
  }

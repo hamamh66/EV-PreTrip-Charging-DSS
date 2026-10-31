@@ -1,33 +1,51 @@
 {
+ "scale_fallback_to_sd": [
+  "number_of_cells",
+  "seats",
+  "body_Cabriolet",
+  "body_Coupe",
+  "body_Hatchback",
+  "body_Liftback Sedan",
+  "body_SUV",
+  "body_Sedan",
+  "body_Small Passenger Van",
+  "body_Station/Estate"
+ ],
+ "missing_share_train": {
+  "number_of_cells": 0.45188284518828453,
+  "towing_capacity_kg": 0.06694560669456066,
+  "torque_nm": 0.0041841004184100415,
+  "fast_charging_power_kw_dc": 0.0
+ },
  "vehicle_cf": {
   "unconstrained (all features vary)": {
    "queries": 30,
-   "queries_with_cf": 22,
-   "valid_and_plausible_cf_share": 0.7696969696969695,
-   "cf_per_query": 7.3,
-   "validity": 0.7333333333333333,
-   "physically_plausible": 0.5644444444444443,
-   "proximity": 26.825165535989466,
-   "sparsity": 1.8474747474747475,
-   "median_L1_to_nearest_real_vehicle": 4.446261903882491
+   "queries_with_cf": 29,
+   "valid_and_plausible_cf_share": 0.8241379310344829,
+   "cf_per_query": 9.4,
+   "validity": 0.9666666666666667,
+   "physically_plausible": 0.7966666666666667,
+   "proximity": 5.686082006917241,
+   "sparsity": 2.0689655172413794,
+   "median_L1_to_nearest_real_vehicle": 3.645423760193581
   },
   "constrained (vehicle category fixed, plausibility filter)": {
    "queries": 30,
-   "queries_with_cf": 21,
+   "queries_with_cf": 27,
    "valid_and_plausible_cf_share": 1.0,
-   "cf_per_query": 5.466666666666667,
-   "validity": 0.7,
-   "physically_plausible": 0.7,
-   "proximity": 3.6574825486812768,
-   "sparsity": 1.6072373393801964,
-   "median_L1_to_nearest_real_vehicle": 3.9209554535787383
+   "cf_per_query": 7.5,
+   "validity": 0.9,
+   "physically_plausible": 0.9,
+   "proximity": 3.532300056056612,
+   "sparsity": 1.5472516166960615,
+   "median_L1_to_nearest_real_vehicle": 3.9212368216763083
   }
  },
  "plausibility": {
-  "MD99": 6.760930984625601,
+  "MD99": 6.639544813573328,
   "kWh_per_cell": [
-   0.14625000000000002,
-   0.9375
+   0.016983695652173912,
+   0.8545454545454545
   ]
  },
  "session_cf_unconstrained": {
@@ -40,7 +58,7 @@
   "validity": 1.0,
   "identity_violation_rate": 0.0,
   "within_SAE_AC_limit": 1.0,
-  "meets_need_under_true_efficiency": 0.92,
-  "median_hours": 7.204950425
+  "meets_need_under_true_efficiency": 0.8733333333333333,
+  "median_hours": 5.9285146950000005
  }
 }
