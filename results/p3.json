@@ -1,0 +1,46 @@
+{
+ "vehicle_cf": {
+  "unconstrained (all features vary)": {
+   "queries": 30,
+   "queries_with_cf": 22,
+   "valid_and_plausible_cf_share": 0.7696969696969695,
+   "cf_per_query": 7.3,
+   "validity": 0.7333333333333333,
+   "physically_plausible": 0.5644444444444443,
+   "proximity": 26.825165535989466,
+   "sparsity": 1.8474747474747475,
+   "median_L1_to_nearest_real_vehicle": 4.446261903882491
+  },
+  "constrained (vehicle category fixed, plausibility filter)": {
+   "queries": 30,
+   "queries_with_cf": 21,
+   "valid_and_plausible_cf_share": 1.0,
+   "cf_per_query": 5.466666666666667,
+   "validity": 0.7,
+   "physically_plausible": 0.7,
+   "proximity": 3.6574825486812768,
+   "sparsity": 1.6072373393801964,
+   "median_L1_to_nearest_real_vehicle": 3.9209554535787383
+  }
+ },
+ "plausibility": {
+  "MD99": 6.760930984625601,
+  "kWh_per_cell": [
+   0.14625000000000002,
+   0.9375
+  ]
+ },
+ "session_cf_unconstrained": {
+  "n_cf": 278,
+  "identity_violation_rate": 0.9964028776978417
+ },
+ "session_cf_constrained": {
+  "vehicles": 30,
+  "cf_per_vehicle": 5.0,
+  "validity": 1.0,
+  "identity_violation_rate": 0.0,
+  "within_SAE_AC_limit": 1.0,
+  "meets_need_under_true_efficiency": 0.92,
+  "median_hours": 7.204950425
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "efficiency": {
+  "eta_true": {
+   "count": 240.0,
+   "mean": 5.4084930633440065,
+   "std": 0.7282841116408127,
+   "min": 3.5,
+   "25%": 4.956538095992396,
+   "50%": 5.4592314901593255,
+   "75%": 5.938464506172839,
+   "max": 7.355371900826446
+  },
+  "eta_rated": {
+   "count": 240.0,
+   "mean": 6.361022539496575,
+   "std": 1.0962106858061231,
+   "min": 2.7027027027027026,
+   "25%": 5.738916256157635,
+   "50%": 6.451612903225806,
+   "75%": 7.042253521126761,
+   "max": 8.771929824561404
+  },
+  "eta_pred_MAPE": 3.5402449796678344,
+  "eta_fixed6_MAPE": 15.272304552728297,
+  "eta_rated_MAPE": 18.498504760406618,
+  "frac_true_below_6": 0.7916666666666666
+ },
+ "dataset2": {
+  "n": 3395,
+  "kwh_q": {
+   "0.5": 6.23,
+   "0.9": 7.13,
+   "0.99": 17.970599999999997,
+   "1.0": 23.68
+  },
+  "P_q": {
+   "0.5": 2.113606798770118,
+   "0.9": 3.105983348789563,
+   "0.99": 5.78692410029785,
+   "1.0": 45.95744686868405
+  },
+  "frac_P_le_7_7": 0.9982326951399116,
+  "hours_median": 2.808888889
+ },
+ "bridge_sensitivity": [
+  {
+   "eta": "4",
+   "E_median": 101.50749206542969,
+   "E_err_vs_true_MAPE": 35.13940681628808,
+   "frac_matched_session_changed": 0.0,
+   "gap_median": 77.82749206542968,
+   "frac_exceeds_single_session": 1.0,
+   "sessions_needed_median": 5.0
+  },
+  {
+   "eta": "5",
+   "E_median": 81.20599365234375,
+   "E_err_vs_true_MAPE": 12.708662736945126,
+   "frac_matched_session_changed": 0.0,
+   "gap_median": 57.52599365234375,
+   "frac_exceeds_single_session": 1.0,
+   "sessions_needed_median": 4.0
+  },
+  {
+   "eta": "6 (fixed)",
+   "E_median": 67.67166137695312,
+   "E_err_vs_true_MAPE": 11.513977036486965,
+   "frac_matched_session_changed": 0.0,
+   "gap_median": 43.991661376953125,
+   "frac_exceeds_single_session": 1.0,
+   "sessions_needed_median": 3.0
+  },
+  {
+   "eta": "7",
+   "E_median": 58.004281180245535,
+   "E_err_vs_true_MAPE": 23.20418650095131,
+   "frac_matched_session_changed": 0.0,
+   "gap_median": 34.324281180245535,
+   "frac_exceeds_single_session": 1.0,
+   "sessions_needed_median": 3.0
+  },
+  {
+   "eta": "8",
+   "E_median": 50.753746032714844,
+   "E_err_vs_true_MAPE": 32.8036631883324,
+   "frac_matched_session_changed": 0.008333333333333333,
+   "gap_median": 27.073746032714844,
+   "frac_exceeds_single_session": 0.975,
+   "sessions_needed_median": 3.0
+  },
+  {
+   "eta": "vehicle-specific (predicted)",
+   "E_median": 75.0,
+   "E_err_vs_true_MAPE": 1.6088189868994688e-15,
+   "frac_matched_session_changed": 0.0,
+   "gap_median": 51.32,
+   "frac_exceeds_single_session": 1.0,
+   "sessions_needed_median": 4.0
+  }
+ ],
+ "system_eval": {
+  "Original pipeline (nominal range, SoC ignored, 6 km/kWh)": {
+   "decision_accuracy": 0.5630000000000001,
+   "unsafe_rate": 0.437,
+   "unnecessary_charge_rate": 0.0,
+   "energy_MAE_kWh": 35.45021204383067,
+   "time_MAE_h_at_L2": 4.923640561643149
+  },
+  "SoC-aware, fixed 6 km/kWh": {
+   "decision_accuracy": 0.9378333333333333,
+   "unsafe_rate": 0.058083333333333334,
+   "unnecessary_charge_rate": 0.004083333333333333,
+   "energy_MAE_kWh": 7.013351618914976,
+   "time_MAE_h_at_L2": 0.9740766137381913
+  },
+  "Physics (rated consumption field)": {
+   "decision_accuracy": 0.9211666666666666,
+   "unsafe_rate": 0.07633333333333334,
+   "unnecessary_charge_rate": 0.0025,
+   "energy_MAE_kWh": 8.510894879626612,
+   "time_MAE_h_at_L2": 1.1820687332814739
+  },
+  "SoC-aware, linear-regression range": {
+   "decision_accuracy": 0.9796666666666667,
+   "unsafe_rate": 0.009833333333333333,
+   "unnecessary_charge_rate": 0.0105,
+   "energy_MAE_kWh": 3.141873926297331,
+   "time_MAE_h_at_L2": 0.4363713786524071
+  },
+  "Proposed (SoC-aware, model-derived efficiency)": {
+   "decision_accuracy": 0.9865833333333335,
+   "unsafe_rate": 0.005916666666666666,
+   "unnecessary_charge_rate": 0.007500000000000001,
+   "energy_MAE_kWh": 2.1737000217896028,
+   "time_MAE_h_at_L2": 0.3019027808041115
+  }
+ },
+ "session_adequacy": {
+  "5 kWh": 0.6824742268041237,
+  "10 kWh": 0.04771723122238586,
+  "15 kWh": 0.020618556701030927,
+  "20 kWh": 0.005301914580265096,
+  "25 kWh": 0.0
+ },
+ "band_stability": {
+  "change_rate_mean": 0.04589583333333334,
+  "change_rate_sd": 0.012136932129981522,
+  "frac_within_1MAE_of_boundary": 0.0875,
+  "band_accuracy_vs_true": 0.9583333333333334
+ }
+}

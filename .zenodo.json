@@ -1,0 +1,8 @@
+{
+  "title": "Counterfactual decision support for pre-trip electric vehicle charging: range estimation, state-of-charge-aware energy planning and rule-based advice (code and results)",
+  "description": "Open-source repository providing a fully reproducible implementation of a pre-trip EV charging decision-support pipeline: nested group cross-validation of an EV range estimator, vehicle-specific efficiency and state-of-charge-aware energy requirement, charging plans at SAE J1772 / IEC 61851 power levels, physically constrained DiCE counterfactuals, and a trip-level evaluation on public datasets.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [{"name": "Hamam, Habib", "affiliation": "Université de Moncton"}],
+  "keywords": ["electric vehicles", "trip planning", "state of charge", "counterfactual explanations", "DiCE", "decision support", "reproducibility"]
+}
