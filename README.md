@@ -1,5 +1,7 @@
 # EV-PreTrip-Charging-DSS
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23841990.svg)](https://doi.org/10.5281/zenodo.23841990)
+
 **Counterfactual decision support for pre-trip electric vehicle charging: range estimation, state-of-charge-aware energy planning and rule-based advice**
 
 This repository contains the complete, reproducible pipeline of a simulation-based decision-support system for pre-trip electric vehicle (EV) charging. One notebook takes two public datasets to every table and figure of the article:
