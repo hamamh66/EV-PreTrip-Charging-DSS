@@ -38,7 +38,7 @@ requirements.txt                  package versions used
 
 ## Data
 
-The datasets are not redistributed. Download `electric_vehicles_spec_2025.csv` (Kaggle: urvishahir/electric-vehicle-specifications-dataset-2025) and `station_data_dataverse.csv` (Kaggle: mdasrafulislamraihat/station-data-dataverse; original data: Asensio, Lawson and Apablaza, Scientific Data 8, 168, 2021, doi:10.1038/s41597-021-00956-1) into `EV_DATA` (default `/content/ev/data`). The split assignments, seeds, tuning grids and all numerical outputs are written to `results/`.
+The datasets are not redistributed. Download `electric_vehicles_spec_2025.csv` (GitHub: mickpires/Electric-Vehicle-Specs-Dataset--2025-, where the file is named `electric_vehicles_spec_2025.csv.csv`) and `station_data_dataverse.csv` (Kaggle: mdasrafulislamraihat/station-data-dataverse; original data: Asensio, Lawson and Apablaza, Scientific Data 8, 168, 2021, doi:10.1038/s41597-021-00956-1) into `EV_DATA` (default `/content/ev/data`). The split assignments, seeds, tuning grids and all numerical outputs are written to `results/`.
 
 ## License
 
